@@ -1,0 +1,26 @@
+﻿l_braz_por:
+ # Revolta da Vacina Event
+ brazil_vaccine_revolt.1.t:0 "A Revolta da Vacina no Rio de Janeiro"
+ brazil_vaccine_revolt.1.d:0 "O governo decretou a vacinação obrigatória contra a varíola no Rio de Janeiro como parte da campanha de modernização sanitária da capital. A medida, embora bem-intencionada, foi recebida com profunda desconfiança pela população mais pobre.\n\nA obrigatoriedade da vacina, somada às campanhas agressivas de demolição de cortiços e remoção forçada de moradores, gerou uma revolta popular massiva. Barricadas foram erguidas nas ruas, bondes foram virados, e a ordem pública entrou em colapso. A população vê a campanha como uma invasão autoritária do Estado em suas vidas privadas, enquanto o governo defende que é necessário para modernizar o Brasil e eliminar as epidemias que assolam a capital."
+ brazil_vaccine_revolt.1.f:0 "A modernização tem seu preço em sangue e lágrimas."
+ brazil_vaccine_revolt.1.a:0 "Esmagar a revolta com força militar!"
+ brazil_vaccine_revolt.1.b:0 "Amenizar a campanha e negociar com a população."
+ brazil_vaccine_revolt.1.c:0 "Investir em educação popular sobre os benefícios da vacinação."
+
+ # Tooltips
+ vaccine_revolt_repression_tt:0 "O Rio de Janeiro se radicaliza com a repressão violenta. A autoridade do governo aumenta mas a aprovação popular cai."
+ vaccine_revolt_negotiation_tt:0 "A campanha avança mais lentamente, mas com menos resistência popular. Benefícios de saúde graduais são alcançados."
+ vaccine_revolt_education_tt:0 "Uma campanha educacional cara mas efetiva convence a população dos benefícios da vacinação. Melhoria duradoura na saúde pública."
+
+ # Modifiers
+ modifier_vaccine_revolt_repression:0 "Repressão à Revolta da Vacina"
+ modifier_vaccine_revolt_repression_desc:0 "A repressão violenta à revolta aumentou nossa autoridade, mas causou profundo ressentimento na população urbana pobre."
+
+ modifier_vaccine_campaign_gradual:0 "Campanha de Vacinação Gradual"
+ modifier_vaccine_campaign_gradual_desc:0 "A campanha de vacinação avança de forma mais gradual e voluntária, reduzindo a mortalidade sem gerar grande resistência."
+
+ modifier_public_health_education:0 "Educação em Saúde Pública"
+ modifier_public_health_education_desc:0 "Investimos pesadamente em educar a população sobre saúde e higiene. Os resultados são excelentes: menor mortalidade, maior qualificação e urbanização mais saudável."
+
+ modifier_progressive_health_policy:0 "Política de Saúde Progressista"
+ modifier_progressive_health_policy_desc:0 "Nossa abordagem educacional e respeitosa à saúde pública ganhou apoio dos intelectuais, embora tenha desagradado os conservadores religiosos."

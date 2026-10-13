@@ -2,6 +2,27 @@
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
+## [5.2] - 2024-10-13
+
+### Adicionado
+- **Revolta da Vacina (1904)** - Evento histórico único
+  - Revolta popular no Rio de Janeiro contra vacinação obrigatória
+  - 3 opções de resolução: repressão, negociação ou educação
+  - 4 modificadores novos com efeitos de saúde pública
+  - Baseado em evento histórico real da modernização urbana
+- **Trait Zona da Mata** - Nova característica geográfica
+  - Faixa litorânea úmida do Nordeste
+  - +20% açúcar, +15% café, +10% tabaco
+  - Aplicada em: Pernambuco, Alagoas, Sergipe, Paraíba
+- **Recursos Naturais Adicionados**:
+  - Manganês em Amapá (+30 ferro não descoberto) - Serra do Navio
+  - Cassiterita em Rondônia (+15 chumbo) - Estanho histórico
+- Localização completa PT-BR para todos novos conteúdos
+
+### Documentação
+- `ANALISE_VANILLA_VS_MOD.md` - Análise completa do que existe vs o que falta
+- `PROGRESSO_V5.2.md` - Status de implementação da versão
+
 ## [5.1] - 2024-10-13
 
 ### Adicionado

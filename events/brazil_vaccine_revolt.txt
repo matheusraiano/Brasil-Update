@@ -1,0 +1,170 @@
+namespace = brazil_vaccine_revolt
+
+# Revolta da Vacina - 1904
+# Rio de Janeiro, modernização urbana vs tradição popular
+brazil_vaccine_revolt.1 = {
+	type = country_event
+	placement = scope:rio_state
+
+	title = brazil_vaccine_revolt.1.t
+	desc = brazil_vaccine_revolt.1.d
+	flavor = brazil_vaccine_revolt.1.f
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	duration = 3
+
+	cooldown = { months = 6 }
+
+	trigger = {
+		c:BRZ ?= THIS
+		game_date >= 1904.1.1
+		game_date < 1920.1.1
+
+		# Rio de Janeiro deve ser capital
+		capital = {
+			state_region = s:STATE_RIO_DE_JANEIRO
+		}
+
+		# Deve ter algum nível de urbanização
+		capital = {
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+
+		# Não estar em guerra civil ou grande guerra
+		is_at_war = no
+
+		# Ter tecnologia de medicina básica
+		has_technology_researched = malaria_prevention
+	}
+
+	immediate = {
+		capital = {
+			save_scope_as = rio_state
+		}
+	}
+
+	# Opção 1: Reprimir com força
+	option = {
+		name = brazil_vaccine_revolt.1.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = vaccine_revolt_repression_tt
+
+			scope:rio_state = {
+				add_radicals_in_state = {
+					value = large_radicals
+				}
+			}
+
+			# Perda de aprovação
+			add_modifier = {
+				name = modifier_vaccine_revolt_repression
+				months = 24
+			}
+		}
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_law = law_type:law_autocracy
+			}
+			modifier = {
+				factor = 0.5
+				has_law = law_type:law_universal_suffrage
+			}
+		}
+	}
+
+	# Opção 2: Negociar e amenizar a campanha
+	option = {
+		name = brazil_vaccine_revolt.1.b
+
+		custom_tooltip = {
+			text = vaccine_revolt_negotiation_tt
+
+			# Campanha mais lenta mas menos resistência
+			add_modifier = {
+				name = modifier_vaccine_campaign_gradual
+				months = 36
+			}
+
+			scope:rio_state = {
+				add_radicals_in_state = {
+					value = small_radicals
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				ruler = {
+					has_ideology = ideology:ideology_moderate
+				}
+			}
+		}
+	}
+
+	# Opção 3: Campanha de educação popular (caro mas efetivo)
+	option = {
+		name = brazil_vaccine_revolt.1.c
+
+		trigger = {
+			# Requer educação avançada
+			has_technology_researched = academia
+
+			# Requer dinheiro
+			gold_reserves >= 50000
+		}
+
+		add_treasury = -50000
+
+		custom_tooltip = {
+			text = vaccine_revolt_education_tt
+
+			# Benefícios de saúde pública duradouros
+			add_modifier = {
+				name = modifier_public_health_education
+				months = 60
+			}
+
+			# Pequena radicalização inicial
+			scope:rio_state = {
+				add_radicals_in_state = {
+					value = very_small_radicals
+				}
+			}
+
+			# Bonus de legitimidade por política progressista
+			add_modifier = {
+				name = modifier_progressive_health_policy
+				months = 36
+			}
+		}
+
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 3
+				has_technology_researched = modern_sewerage
+			}
+			modifier = {
+				factor = 2
+				gold_reserves >= 100000
+			}
+		}
+	}
+}
