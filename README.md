@@ -16,16 +16,21 @@ Um mod completo para Victoria 3 que expande e aprimora a representação histór
 
 ### ⛏️ Recursos Naturais Históricos
 - **Ouro em Minas Gerais**: Valores históricos representando o ciclo do ouro
-- **Ferro e Mineração**: Recursos estratégicos distribuídos historicamente
+- **Ferro e Mineração**: Recursos estratégicos distribuídos historicamente (Serra dos Carajás, Amapá)
 - **Petróleo**: Reservas realistas refletindo as descobertas do século XX
 - **Borracha Amazônica**: Representação do ciclo da borracha
 - **Café**: Recursos agrícolas para o boom cafeeiro de São Paulo
+- **Manganês**: Depósitos em Amapá (Serra do Navio)
+- **Cassiterita**: Estanho em Rondônia
 
 ### 🌿 Traits Geográficas Brasileiras
 - **Terra Roxa**: Solo extremamente fértil em São Paulo e Paraná
 - **Mata Atlântica**: Floresta costeira do Sudeste
 - **Floresta Amazônica**: Maior floresta tropical do mundo
 - **Sertão**: Região semiárida do Nordeste
+- **Cerrado**: Savana brasileira (Goiás, Tocantins, Mato Grosso)
+- **Caatinga**: Vegetação xerófila do Nordeste semiárido
+- **Zona da Mata**: Faixa litorânea úmida do Nordeste (PE, AL, SE, PB)
 - **Serra dos Carajás**: Rica região mineral do Pará
 
 ### 🌍 Tradução Completa PT-BR
@@ -37,6 +42,12 @@ Um mod completo para Victoria 3 que expande e aprimora a representação histór
 - Dados demográficos baseados em censos e estimativas da época
 - Distribuição étnica realista (brasileiros, afro-brasileiros, indígenas, escravizados)
 - População total aproximada de 5 milhões de habitantes
+
+### 🎭 Eventos Históricos
+- **Balaiada (1838-1841)**: Revolta popular no Maranhão
+- **Sabinada (1837-1838)**: Rebelião separatista na Bahia
+- **Expansão Cafeeira (1850-1890)**: Crescimento do ciclo do café em São Paulo, Minas Gerais e Rio de Janeiro
+- **Revolta da Vacina (1904)**: Revolta popular no Rio de Janeiro contra vacinação obrigatória
 
 ## 🎮 Instalação
 
@@ -88,7 +99,20 @@ Um mod completo para Victoria 3 que expande e aprimora a representação histór
 
 ## 🛠️ Changelog
 
-### v5.0 (Atual)
+### v5.2 (Atual)
+- ✅ **Novo Evento**: Revolta da Vacina (1904) com 3 opções balanceadas
+- ✅ **Nova Trait**: Zona da Mata (litoral nordestino: PE, AL, SE, PB)
+- ✅ **Novos Recursos**: Manganês em Amapá, Cassiterita em Rondônia
+- ✅ Corrigido bug crítico que causava Brasil branco no mapa
+- ✅ Corrigido bug de Alagoas (sintaxe de províncias)
+- ✅ 4 novos modificadores de saúde pública
+
+### v5.1
+- ✅ Eventos históricos: Balaiada, Sabinada, Expansão Cafeeira
+- ✅ Traits brasileiras: Cerrado e Caatinga
+- ✅ Sistema completo de modificadores
+
+### v5.0
 - ✅ Corrigido bug de nomenclatura (STATE_ESPIRITO_SANTO)
 - ✅ Aumentadas reservas de petróleo (SP, MG, Zulia)
 - ✅ Balanceado São Paulo para início mais histórico
