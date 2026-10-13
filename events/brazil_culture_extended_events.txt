@@ -1,0 +1,118 @@
+namespace = brazil_culture_extended
+
+# The Integration of the Mineiros
+brazil_culture_extended.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = brazil_culture_extended.1.t
+	desc = brazil_culture_extended.1.d
+	flavor = brazil_culture_extended.1.f
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		 # triggered by clicking JE button
+	}
+
+	option = {
+		name = brazil_culture_extended.1.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_mineiro_tt
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:mineiro }
+					change_pop_culture = { target = cu:brazilian value = 1 }
+				}
+			}
+		}
+	}
+}
+
+# The Integration of the Cariocas
+brazil_culture_extended.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = brazil_culture_extended.2.t
+	desc = brazil_culture_extended.2.d
+	flavor = brazil_culture_extended.2.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		 # triggered by clicking JE button
+	}
+
+	option = {
+		name = brazil_culture_extended.2.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_carioca_tt
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:carioca }
+					change_pop_culture = { target = cu:brazilian value = 1 }
+				}
+			}
+		}
+	}
+}
+
+# The Integration of the Sertanejos
+brazil_culture_extended.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = brazil_culture_extended.3.t
+	desc = brazil_culture_extended.3.d
+	flavor = brazil_culture_extended.3.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		 # triggered by clicking JE button
+	}
+
+	option = {
+		name = brazil_culture_extended.3.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_sertanejo_tt
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:sertanejo }
+					change_pop_culture = { target = cu:brazilian value = 1 }
+				}
+			}
+		}
+	}
+}

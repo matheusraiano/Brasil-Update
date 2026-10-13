@@ -1,0 +1,359 @@
+namespace = brazil_update_plus
+
+# Balaiada (1838-1841) - Maranhão
+brazil_update_plus.1 = {
+	type = country_event
+	placement = scope:balaiada_state
+
+	title = brazil_update_plus.1.t
+	desc = brazil_update_plus.1.d
+	flavor = brazil_update_plus.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_revolt.dds"
+
+	duration = 3
+
+	trigger = {
+		c:BRZ ?= THIS
+		game_date >= 1838.1.1
+		game_date < 1842.1.1
+		NOT = { has_variable = balaiada_occurred }
+
+		exists = s:STATE_MARANHAO
+		s:STATE_MARANHAO = {
+			owner = ROOT
+			any_scope_pop = {
+				standard_of_living < 10
+			}
+		}
+	}
+
+	immediate = {
+		set_variable = balaiada_occurred
+		s:STATE_MARANHAO = {
+			save_scope_as = balaiada_state
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.1.a
+		default_option = yes
+
+		# Repressão militar pesada
+		add_radicals = {
+			value = large_radicals
+			strata = poor
+		}
+
+		s:STATE_MARANHAO = {
+			add_devastation = 15
+			add_modifier = {
+				name = modifier_rebeliao_reprimida
+				months = 36
+			}
+		}
+
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = modifier_militares_fortalecidos
+				months = 24
+			}
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.1.b
+
+		# Negociação e anistia parcial
+		add_radicals = {
+			value = -medium_radicals
+			strata = poor
+		}
+
+		s:STATE_MARANHAO = {
+			add_modifier = {
+				name = modifier_reconciliacao_social
+				months = 24
+			}
+		}
+
+		add_loyalists = {
+			value = small_radicals
+			pop_type = peasants
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.1.c
+
+		# Reformas sociais
+		add_enacted_law = law_poor_laws
+
+		add_modifier = {
+			name = modifier_reformas_progressistas
+			months = 48
+		}
+
+		ig:ig_landowners = {
+			add_modifier = {
+				name = modifier_latifundiarios_insatisfeitos
+				months = 36
+			}
+		}
+	}
+}
+
+# Sabinada (1837-1838) - Bahia
+brazil_update_plus.2 = {
+	type = country_event
+	placement = scope:sabinada_state
+
+	title = brazil_update_plus.2.t
+	desc = brazil_update_plus.2.d
+	flavor = brazil_update_plus.2.f
+
+	event_image = {
+		video = "southamerica_public_ceremony"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_revolt.dds"
+
+	duration = 3
+
+	trigger = {
+		c:BRZ ?= THIS
+		game_date >= 1837.1.1
+		game_date < 1839.1.1
+		NOT = { has_variable = sabinada_occurred }
+
+		exists = s:STATE_BAHIA
+		s:STATE_BAHIA = {
+			owner = ROOT
+		}
+
+		# Maior chance se houver tensão política
+		OR = {
+			has_law = law_type:law_autocracy
+			ig:ig_intelligentsia = {
+				is_powerful = yes
+				is_in_government = no
+			}
+		}
+	}
+
+	immediate = {
+		set_variable = sabinada_occurred
+		s:STATE_BAHIA = {
+			save_scope_as = sabinada_state
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.2.a
+		default_option = yes
+
+		# Repressão rápida
+		s:STATE_BAHIA = {
+			add_devastation = 10
+			add_radicals_in_state = {
+				value = medium_radicals
+			}
+		}
+
+		add_modifier = {
+			name = modifier_autoritarismo_centralizado
+			months = 24
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.2.b
+
+		# Concessões políticas limitadas
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = modifier_intelectuais_apaziguados
+				months = 36
+			}
+		}
+
+		s:STATE_BAHIA = {
+			add_modifier = {
+				name = modifier_autonomia_regional
+				months = 48
+			}
+		}
+	}
+}
+
+# Expansão do Café - São Paulo
+brazil_update_plus.3 = {
+	type = country_event
+	placement = scope:cafe_state
+
+	title = brazil_update_plus.3.t
+	desc = brazil_update_plus.3.d
+	flavor = brazil_update_plus.3.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		c:BRZ ?= THIS
+		game_date >= 1850.1.1
+		NOT = { has_variable = cafe_expansion_1 }
+
+		exists = s:STATE_SAO_PAULO
+		s:STATE_SAO_PAULO = {
+			owner = ROOT
+		}
+
+		has_technology_researched = intensive_agriculture
+	}
+
+	immediate = {
+		set_variable = cafe_expansion_1
+		s:STATE_SAO_PAULO = {
+			save_scope_as = cafe_state
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.3.a
+		default_option = yes
+
+		# Investir fortemente no café
+		add_treasury = -50000
+
+		s:STATE_SAO_PAULO = {
+			add_arable_land = 30
+			add_modifier = {
+				name = modifier_boom_cafeeiro
+				months = 120
+			}
+		}
+
+		ig:ig_landowners = {
+			add_modifier = {
+				name = modifier_fazendeiros_prosperos
+				months = 60
+			}
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.3.b
+
+		# Desenvolvimento moderado
+		s:STATE_SAO_PAULO = {
+			add_arable_land = 15
+			add_modifier = {
+				name = modifier_agricultura_diversificada
+				months = 60
+			}
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.3.c
+
+		# Foco em industrialização
+		s:STATE_SAO_PAULO = {
+			add_modifier = {
+				name = modifier_industrializacao_precoce
+				months = 80
+			}
+		}
+
+		add_technology_progress = {
+			progress = 500
+			technology = basic_steelworking
+		}
+	}
+}
+
+# Segunda onda de expansão do café (1870+)
+brazil_update_plus.4 = {
+	type = country_event
+	placement = scope:cafe_state_2
+
+	title = brazil_update_plus.4.t
+	desc = brazil_update_plus.4.d
+	flavor = brazil_update_plus.4.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		c:BRZ ?= THIS
+		game_date >= 1870.1.1
+		has_variable = cafe_expansion_1
+		NOT = { has_variable = cafe_expansion_2 }
+
+		exists = s:STATE_SAO_PAULO
+		s:STATE_SAO_PAULO = {
+			owner = ROOT
+		}
+	}
+
+	immediate = {
+		set_variable = cafe_expansion_2
+		s:STATE_SAO_PAULO = {
+			save_scope_as = cafe_state_2
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.4.a
+		default_option = yes
+
+		# Continuar expansão
+		s:STATE_SAO_PAULO = {
+			add_arable_land = 20
+		}
+
+		s:STATE_MINAS_GERAIS = {
+			add_arable_land = 30
+			add_modifier = {
+				name = modifier_cafe_sul_minas
+				months = 60
+			}
+		}
+
+		s:STATE_RIO_DE_JANEIRO = {
+			add_arable_land = 15
+		}
+	}
+
+	option = {
+		name = brazil_update_plus.4.b
+
+		# Modernização com imigração
+		add_modifier = {
+			name = modifier_imigracao_europeia
+			months = 120
+		}
+
+		s:STATE_SAO_PAULO = {
+			add_arable_land = 15
+		}
+	}
+}

@@ -1,0 +1,272 @@
+# Brazil Update+ - Integration Buttons for New Cultures
+# Adds mineiro, carioca, and sertanejo to the Brazilian nation building system
+
+je_brazilian_nation_building_integrate_mineiro = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_mineiro"
+				trigger = {
+					NOT = { has_variable = mineiros_integrated }
+				}
+			}
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_mineiro_past_tense"
+				trigger = {
+					has_variable = mineiros_integrated
+				}
+			}
+		}
+	}
+	desc = "je_brazilian_nation_building_integrate_mineiro_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		cu:brazilian.culture_current_fervor > cu:mineiro.culture_current_fervor
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:mineiro
+			}
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_brazilian_nation_building_brazilian_national_hero_owned
+				has_variable = brazilian_mineiro_hero_var
+			}
+			custom_tooltip = {
+				text = je_brazilian_nation_building_mineiro_gold_mines
+				any_scope_state = {
+					state_region = {
+						is_homeland = cu:mineiro
+					}
+					any_scope_building = {
+						is_building_type = building_gold_mine
+						level >= 10
+					}
+				}
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				has_variable = mineiros_integrated
+			}
+		}
+	}
+
+	effect = {
+		trigger_event = { id = brazil_culture_extended.1 }
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = brazilian_mineiro_hero_var
+				}
+				remove_variable = brazilian_mineiro_hero_var
+			}
+			set_variable = {
+				name = mineiros_integrated
+			}
+		}
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_mineiro_removal_tt
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:mineiro
+					}
+				}
+				state_region = {
+					remove_homeland = cu:mineiro
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100 # Always press this button
+	}
+}
+
+je_brazilian_nation_building_integrate_carioca = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_carioca"
+				trigger = {
+					NOT = { has_variable = cariocas_integrated }
+				}
+			}
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_carioca_past_tense"
+				trigger = {
+					has_variable = cariocas_integrated
+				}
+			}
+		}
+	}
+	desc = "je_brazilian_nation_building_integrate_carioca_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		cu:brazilian.culture_current_fervor > cu:carioca.culture_current_fervor
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:carioca
+			}
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_brazilian_nation_building_brazilian_national_hero_owned
+				has_variable = brazilian_carioca_hero_var
+			}
+			custom_tooltip = {
+				text = je_brazilian_nation_building_carioca_capital_infrastructure
+				capital = {
+					state_region = {
+						is_homeland = cu:carioca
+					}
+					OR = {
+						any_scope_building = {
+							is_building_type = building_university
+							level >= 5
+						}
+						any_scope_building = {
+							is_building_type = building_government_administration
+							level >= 10
+						}
+					}
+				}
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				has_variable = cariocas_integrated
+			}
+		}
+	}
+
+	effect = {
+		trigger_event = { id = brazil_culture_extended.2 }
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = brazilian_carioca_hero_var
+				}
+				remove_variable = brazilian_carioca_hero_var
+			}
+			set_variable = {
+				name = cariocas_integrated
+			}
+		}
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_carioca_removal_tt
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:carioca
+					}
+				}
+				state_region = {
+					remove_homeland = cu:carioca
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100 # Always press this button
+	}
+}
+
+je_brazilian_nation_building_integrate_sertanejo = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_sertanejo"
+				trigger = {
+					NOT = { has_variable = sertanejos_integrated }
+				}
+			}
+			triggered_desc = {
+				desc = "je_brazilian_nation_building_integrate_sertanejo_past_tense"
+				trigger = {
+					has_variable = sertanejos_integrated
+				}
+			}
+		}
+	}
+	desc = "je_brazilian_nation_building_integrate_sertanejo_desc"
+
+	visible = { always = yes }
+
+	possible = {
+		cu:brazilian.culture_current_fervor > cu:sertanejo.culture_current_fervor
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:sertanejo
+			}
+		}
+		OR = {
+			custom_tooltip = {
+				text = je_brazilian_nation_building_brazilian_national_hero_owned
+				has_variable = brazilian_sertanejo_hero_var
+			}
+			custom_tooltip = {
+				text = je_brazilian_nation_building_sertanejo_development
+				any_scope_state = {
+					state_region = {
+						is_homeland = cu:sertanejo
+					}
+					OR = {
+						any_scope_building = {
+							is_building_type = building_railroad
+							level >= 3
+						}
+						any_scope_building = {
+							is_building_type = building_livestock_ranch
+							level >= 5
+						}
+					}
+				}
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				has_variable = sertanejos_integrated
+			}
+		}
+	}
+
+	effect = {
+		trigger_event = { id = brazil_culture_extended.3 }
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = brazilian_sertanejo_hero_var
+				}
+				remove_variable = brazilian_sertanejo_hero_var
+			}
+			set_variable = {
+				name = sertanejos_integrated
+			}
+		}
+		custom_tooltip = {
+			text = je_brazilian_nation_building_integrate_sertanejo_removal_tt
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:sertanejo
+					}
+				}
+				state_region = {
+					remove_homeland = cu:sertanejo
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100 # Always press this button
+	}
+}

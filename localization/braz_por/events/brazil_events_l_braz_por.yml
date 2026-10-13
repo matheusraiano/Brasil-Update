@@ -1,0 +1,46 @@
+﻿l_braz_por:
+ # Balaiada Event
+ brazil_update_plus.1.t:0 "A Balaiada no Maranhão"
+ brazil_update_plus.1.d:0 "Uma revolta popular eclodiu no Maranhão, liderada por Manuel Francisco dos Anjos Ferreira, conhecido como 'Balaio'. Vaqueiros, escravos fugidos e população pobre se uniram contra o governo provincial, insatisfeitos com as condições miseráveis, o recrutamento forçado e os abusos das autoridades locais. A rebelião ameaça a estabilidade da província e o controle imperial na região."
+ brazil_update_plus.1.f:0 "A Balaiada representou uma das maiores revoltas populares do período regencial brasileiro."
+ brazil_update_plus.1.a:0 "Enviar tropas imperiais para esmagar a revolta!"
+ brazil_update_plus.1.b:0 "Negociar e oferecer anistia aos rebeldes."
+ brazil_update_plus.1.c:0 "Implementar reformas sociais para resolver as causas da revolta."
+
+ # Sabinada Event
+ brazil_update_plus.2.t:0 "A Sabinada na Bahia"
+ brazil_update_plus.2.d:0 "O médico e jornalista Francisco Sabino Álvares da Rocha Vieira liderou uma revolta em Salvador, proclamando a independência temporária da Bahia até a maioridade de Dom Pedro II. Os rebeldes, compostos principalmente por militares de baixa patente e classes médias urbanas, contestam o governo regencial e exigem maior autonomia provincial. A capital baiana está sob controle dos insurgentes."
+ brazil_update_plus.2.f:0 "A Sabinada foi um movimento federalista que durou de novembro de 1837 a março de 1838."
+ brazil_update_plus.2.a:0 "Retomar Salvador pela força imediatamente!"
+ brazil_update_plus.2.b:0 "Oferecer concessões políticas para encerrar o conflito."
+
+ # First Coffee Expansion
+ brazil_update_plus.3.t:0 "O Boom do Café em São Paulo"
+ brazil_update_plus.3.d:0 "A expansão das plantações de café está transformando São Paulo na região mais próspera do Império. As terras roxas do oeste paulista mostram-se ideais para o cultivo, e fazendeiros estão adquirindo vastas propriedades. O café brasileiro domina os mercados internacionais, e a província paulista está no centro desta explosão econômica. Como devemos orientar este desenvolvimento?"
+ brazil_update_plus.3.f:0 "O café se tornou o principal produto de exportação do Brasil a partir de 1850."
+ brazil_update_plus.3.a:0 "Investir pesadamente na expansão cafeeira!"
+ brazil_update_plus.3.b:0 "Permitir crescimento moderado e diversificado."
+ brazil_update_plus.3.c:0 "Usar os lucros do café para industrializar São Paulo."
+
+ # Second Coffee Expansion
+ brazil_update_plus.4.t:0 "A Marcha do Café pelo Interior"
+ brazil_update_plus.4.d:0 "As plantações de café continuam sua expansão inexorável pelo interior paulista, penetrando também no sul de Minas Gerais e no Rio de Janeiro. Ferrovias estão sendo construídas para escoar a produção, e imigrantes europeus chegam aos milhares para trabalhar nas fazendas. O Brasil consolida sua posição como maior produtor mundial de café."
+ brazil_update_plus.4.f:0 "Entre 1870 e 1900, o Brasil produziu mais da metade do café consumido no mundo."
+ brazil_update_plus.4.a:0 "Continuar a expansão cafeeira por São Paulo, Minas e Rio."
+ brazil_update_plus.4.b:0 "Focar em modernização e atração de imigrantes."
+
+ # Modifiers
+ modifier_rebeliao_reprimida:0 "Rebelião Reprimida"
+ modifier_reconciliacao_social:0 "Reconciliação Social"
+ modifier_reformas_progressistas:0 "Reformas Progressistas"
+ modifier_militares_fortalecidos:0 "Militares Fortalecidos"
+ modifier_latifundiarios_insatisfeitos:0 "Latifundiários Insatisfeitos"
+ modifier_autoritarismo_centralizado:0 "Autoritarismo Centralizado"
+ modifier_intelectuais_apaziguados:0 "Intelectuais Apaziguados"
+ modifier_autonomia_regional:0 "Autonomia Regional"
+ modifier_boom_cafeeiro:0 "Boom do Café"
+ modifier_fazendeiros_prosperos:0 "Fazendeiros Prósperos"
+ modifier_agricultura_diversificada:0 "Agricultura Diversificada"
+ modifier_industrializacao_precoce:0 "Industrialização Precoce"
+ modifier_cafe_sul_minas:0 "Café no Sul de Minas"
+ modifier_imigracao_europeia:0 "Imigração Europeia"

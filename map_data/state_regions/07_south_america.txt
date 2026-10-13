@@ -81,7 +81,7 @@ STATE_ZULIA = {
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 60
+        undiscovered_amount = 120
     }
     naval_exit_id = 3025
 }
@@ -852,9 +852,9 @@ STATE_PARA = {
     city = "xC413AA"
     port = "x04CE13"
     farm = "x10871C"
-    mine = "x45DA42"
+    mine = "x8839E0"
     wood = "x229F7E"
-    arable_land = 400
+    arable_land = 120
     arable_resources = { "bg_rice_farms" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_banana_plantation" }
     capped_resources = {
         building_logging_camp = 9
@@ -1012,6 +1012,7 @@ STATE_GOIAS = {
     id = 666
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0335B6" "x045CE0" "x0A9917" "x12E97B" "x14A9B7" "x1D51EE" "x204F5F" "x2694E0" "x26A74D" "x28B344" "x29DE5E" "x2A7D3A" "x2F75E0" "x30692A" "x353CC4" "x35B9A6" "x364382" "x3A3D31" "x409F30" "x424959" "x47CAD2" "x4C4DCE" "x5022D9" "x537644" "x5433F8" "x5592E6" "x57B1CF" "x593E5A" "x5C0902" "x5F1A82" "x5F8837" "x63E255" "x66894C" "x66F3B6" "x687432" "x68CC1F" "x6D14BD" "x7CD983" "x7EE37D" "x807EC6" "x881C3F" "x8985ED" "x8CB3DA" "x8D3998" "x94E0A3" "x9732AB" "xB7A07A" "xB914E5" "xBB0697" "xBE2D5E" "xBFE7B6" "xC2B97E" "xC4B006" "xC7D39A" "xC8814C" "xC8AD6E" "xD6276C" "xDD0A20" "xDD4517" "xDDAD82" "xDF0733" "xE40A29" "xE4F5E4" "xEB754C" "xEE4885" "xF7FAF1" }
+    traits = { "state_trait_cerrado" }
     city = "xC2B97E"
     farm = "x57B1CF"
     mine = "x68CC1F"
@@ -1038,7 +1039,7 @@ STATE_TOCANTINS = {
     id = 901
     subsistence_building = "building_subsistence_farms"
     provinces = { "x030718" "x087FD3" "x184B61" "x22CF25" "x266D5E" "x28361D" "x28C4BB" "x2C715A" "x2EDF1D" "x37E1AD" "x3F707A" "x48E459" "x57F295" "x5C3AFC" "x6526AF" "x65A627" "x695BDD" "x75C440" "x774C4A" "x7C0E6D" "x7DEBF8" "x891E70" "x8A7AE1" "x8B2ADA" "x8ED5C9" "x92BC48" "x93C71F" "x990CED" "xA02D57" "xA04190" "xA2A177" "xA59A91" "xB222D4" "xB518E9" "xBB5AB2" "xBD890D" "xBE9939" "xC0126C" "xC42C8F" "xC9A5A3" "xD4E7CE" "xD5ADF0" "xD8EFD5" "xE4A7DA" "xEDC084" "xEE95C4" "xF01E32" "xF41C9C" "xF75947" "xFF81EE" }
-    traits = { "state_trait_amazon_rainforest" }
+    traits = { "state_trait_amazon_rainforest" "state_trait_cerrado" }
     city = "x030718"
     farm = "x087FD3"
     mine = "x184B61"
@@ -1065,7 +1066,7 @@ STATE_MATO_GROSSO = {
     id = 387
     subsistence_building = "building_subsistence_farms"
     provinces = { xB78A12 x68945C xA6F2B7 x3DE3B3 x3B9107 x00908F x0141D0 x01BCE8 x01DA65 x040C17 x04B286 x0656BC x0787AA x0A7262 x0D1245 x0E4B34 x0F0F7E x10504F x11330B x11FB67 x15BFE8 x1774C8 x17D536 x182380 x184722 x1CF67D x1DF7C9 x1E7015 x22E97D x22EC82 x25C093 x277DD3 x27C08F x29C483 x2A97C3 x2AE17E x2B826F x2B9070 x2C6278 x2FB187 x313D66 x34DF8A x364BA6 x37A4BA x3A3CE3 x3C8A04 x3CD803 x3D90CB x4045E7 x405F17 x41CAAA x4236E9 x4A5BBF x4AE149 x4B18FB x4EA25F x4F11D7 x4F2BDA x5014D8 x50F389 x51D595 x52A4E3 x561F28 x56393C x5A3296 x5A9A8E x5ADB44 x5B1757 x60F2BD x618E48 x643D81 x6696CA x67F461 x69DFC4 x6EBBB7 x6FD2AB x71D9D7 x724C74 x738424 x754421 x75C6D7 x75CEE8 x760CE7 x776B49 x7929C2 x7A5DE0 x7BFBFD x7CD432 x81412E x82D74F x86F093 x87D837 x88DD4E x89892F x8AEF71 x8EFA19 x8FBAD0 x90374C x919690 x91B508 x92C628 x93EE28 x93F111 x96AF4C x97E7EB x980045 x9857EB x9AD896 x9D43CF x9ED33B xA18C78 xA199C6 xA27083 xA28D6D xA4140F xA5B966 xA5E152 xA61CC9 xA6DF31 xA7C769 xA8A2F7 xA8D34F xAB972A xABFA19 xAECD87 xAF2A17 xAF60BB xB26BED xB2B9BA xB3B0D7 xBA3D90 xBA4B7C xBE0073 xBF2031 xC48D73 xC67143 xC6C424 xC7ED83 xC84C89 xC8BE47 xCC1C10 xCEB8CB xCF7DCB xCFC8B9 xCFCEB4 xD247CC xD247D2 xD38892 xD3ACD6 xD5C3C8 xD86D1A xDBB71B xDCD39F xDD69F8 xDE5BE5 xDEAB1B xE02E9A xE11FD3 xE18406 xE3AA75 xE67FA7 xE72C6E xE8512C xE9C5E4 xEB26F2 xEB9C41 xECCFD7 xEF9BED xEFAE40 xF2431F xF3DE48 xF53054 xF66667 xF6D554 xF714FC xF952C1 "xF9BA26" "xFA2457" "xFB873A" "xFD215B"		 }
-    traits = { "state_trait_amazon_rainforest" "state_trait_pantanal" state_trait_terra_roxa }
+    traits = { "state_trait_amazon_rainforest" "state_trait_pantanal" state_trait_terra_roxa "state_trait_cerrado" }
     city = "x01DA65"
     farm = "x040C17"
     mine = "x04B286"
@@ -1121,7 +1122,7 @@ STATE_MATO_GROSSO_DU_SUL = {
     id = 900
     subsistence_building = "building_subsistence_farms"
     provinces = { x0076E6 x0F1505 x140CF6 x17675E x1829A5 x1AADD5 x1C1B7D x1C92E2 x1F354A x25BD9D x265206 x26F90F x2A23E9 x2ACD4C x2AD465 x2B1252 x2CDDD0 x2E7F13 x35A513 x3880D4 x3F2C86 x409970 x40A662 x42A2E2 x433385 x478475 x4D8530 x4D9D8F x53D7A6 x5806B4 x5A6439 x5DDBCA x60720A x6506ED x68C4E1 x758198 x7E10B1 x857B07 x861B98 x86AA33 x987D0C x98A3E2 x9D3615 x9E0077 xA3DC23 xA44544 xA4ABA2 xABA285 xB347D6 xB977BC xB9F1FF xBB6F3F xBC53A5 xC26C9C xC6CED2 xC9955F xCA0FAC xCD6F40 xCDF95A xD0223C xD331D4 xDD8728 xE1B118 xEA47DD xF02F76 xF113B9 xF80839 xF9F924 xFB3C67 "xFB9C08" "xFC7A98" "xFCE4EB" "xFD8937" }
-    traits = { "state_trait_pantanal" state_trait_terra_roxa }
+    traits = { "state_trait_pantanal" state_trait_terra_roxa "state_trait_cerrado" }
     city = "x0076E6"
     farm = "x0F1505"
     mine = "x140CF6"
@@ -1220,7 +1221,7 @@ STATE_SAO_PAULO = {
     farm = "x1870F2"
     mine = "xD2EC89"
     wood = "xD7EC24"
-    arable_land = 220
+    arable_land = 160
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "bg_dye_plantations" "bg_tea_plantations" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
         building_logging_camp = 22
@@ -1233,7 +1234,7 @@ STATE_SAO_PAULO = {
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 5
+        undiscovered_amount = 40
     }
     naval_exit_id = 3064
 }
@@ -1265,7 +1266,7 @@ STATE_MINAS_GERAIS = {
     }
     resource = {
         type = "building_oil_rig"
-        undiscovered_amount = 5
+        undiscovered_amount = 40
     }
 }
 
@@ -1292,7 +1293,7 @@ STATE_RIO_DE_JANEIRO = {
     }
     naval_exit_id = 3064
 }
-STATE_ESPÍRITO_SANTO = {
+STATE_ESPIRITO_SANTO = {
     id = 800
     subsistence_building = "building_subsistence_farms"
     provinces = { "xE0E888" "x27995A" "x8350FC" "x3BDEE1" "x9555DE" "xB97C7F" "x258421" "x96728E" }
@@ -1344,7 +1345,7 @@ STATE_RIO_GRANDE_DO_NORTE = {
     id = 394
     subsistence_building = "building_subsistence_farms"
     provinces = { "x37F7DE" "x563E55" "x5DCFF3" "x604190" "x6E0A83" "xAD0128" "xB1D72A" "xDC9F66" "xED0C0B" }
-    traits = { state_trait_sertao state_trait_mata_atlantica }
+    traits = { state_trait_sertao state_trait_mata_atlantica "state_trait_caatinga" }
     city = "xB1D72A"
     port = "x5DCFF3"
     farm = "x5DCFF3"
@@ -1367,7 +1368,7 @@ STATE_CEARA = {
     id = 661
     subsistence_building = "building_subsistence_farms"
     provinces = { "x032EA0" "x0A925F" "x0CB7A9" "x0DFF9A" "x140E0C" "x23A1AB" "x2B8A36" "x3AE396" "x469A7C" "x4C763A" "x50BC85" "x510F08" "x67D67F" "x72A418" "x835C1F" "x85E12F" "x915F53" "x9C9F0B" "xA202FC" "xA28EF1" "xA6BA83" "xBE1280" "xCB19E2" "xD54255" "xD95159" "xE04111" "xE29237" "xED5CF9" }
-    traits = { state_trait_sertao }
+    traits = { state_trait_sertao "state_trait_caatinga" }
     city = "x140E0C"
     port = "xA6BA83"
     farm = "xED5CF9"
@@ -1391,7 +1392,7 @@ STATE_PIAUI = {
     id = 660
     subsistence_building = "building_subsistence_farms"
     provinces = { "x042D0E" "x044CF8" "x07B5EB" "x0BDBE6" "x0DE512" "x14F661" "x189F0F" "x21C090" "x361174" "x506683" "x52B7ED" "x584067" "x66681E" "x68A97F" "x69BE90" "x735527" "x772A8C" "x7DCBC3" "x83E18C" "x8564C7" "x88F401" "x89AFD6" "x8A4B48" "x8DF511" "x91AB15" "x920A8F" "xA0C090" "xA33C32" "xA4E24B" "xA8B0C0" "xA9AA6B" "xAB0B29" "xAB18E1" "xB169D2" "xB355EE" "xB5C4BF" "xB634E7" "xB831D5" "xC688FC" "xC74E19" "xCA2BC6" "xCE40A2" "xCE8F26" "xD621B3" "xDA2527" "xDCFBF2" "xE39C8B" "xF07D68" "xF58072" "xF71214" }
-    traits = { state_trait_sertao }
+    traits = { state_trait_sertao "state_trait_caatinga" }
     city = "x14F661"
     port = "xB169D2"
     farm = "xF71214"
@@ -1467,15 +1468,19 @@ STATE_SERGIPE = {
     farm = "x69F57B"
     mine = "xC0A070"
     wood = "x69F57B"
-    arable_land = 60
+    arable_land = 90
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
-        building_logging_camp = 5
-        building_fishing_wharf = 3
+        building_logging_camp = 7
+        building_fishing_wharf = 5
     }
     resource = {
         type = "building_rubber_plantation"
-        discovered_amount = 2
+        discovered_amount = 3
+    }
+    resource = {
+        type = "building_oil_rig"
+        undiscovered_amount = 15
     }
     naval_exit_id = 3063
 }
@@ -1490,15 +1495,19 @@ STATE_ALAGOAS = {
     farm = "x8941F9"
     mine = "xC4D392"
     wood = "x344DF2"
-    arable_land = 80
+    arable_land = 120
     arable_resources = { "building_maize_farm" "building_livestock_ranch" "building_coffee_plantation" "building_cotton_plantation" "building_tobacco_plantation" "building_sugar_plantation" "building_banana_plantation" }
     capped_resources = {
-        building_logging_camp = 5
-        building_fishing_wharf = 3
+        building_logging_camp = 8
+        building_fishing_wharf = 5
     }
     resource = {
         type = "building_rubber_plantation"
-        discovered_amount = 2
+        discovered_amount = 3
+    }
+    resource = {
+        type = "building_iron_mine"
+        undiscovered_amount = 10
     }
     naval_exit_id = 3063
 }

@@ -1,0 +1,7 @@
+﻿l_braz_por:
+ # Brazilian Biome Traits
+ state_trait_cerrado:0 "Cerrado"
+ state_trait_cerrado_desc:0 "O Cerrado é a savana brasileira, caracterizada por vegetação de arbustos e árvores esparsas. Seu solo ácido é adequado para pecuária extensiva e agricultura com correção, mas a infraestrutura é desafiadora devido às vastas distâncias."
+
+ state_trait_caatinga:0 "Caatinga"
+ state_trait_caatinga_desc:0 "A Caatinga é o único bioma exclusivamente brasileiro, caracterizado por clima semiárido, chuvas irregulares e vegetação adaptada à seca. A agricultura é extremamente limitada, dependendo de irrigação, mas a pecuária de subsistência é possível."

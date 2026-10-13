@@ -1,0 +1,14 @@
+CULTURES = {
+	# Brazil Update+ - Cultural Fervor for New Cultures
+	# Sets initial fervor values for mineiro, carioca, and sertanejo cultures
+
+	cu:mineiro = {
+		set_fervor = 20
+	}
+	cu:carioca = {
+		set_fervor = 15
+	}
+	cu:sertanejo = {
+		set_fervor = 25
+	}
+}

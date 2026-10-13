@@ -1,0 +1,54 @@
+﻿l_braz_por:
+ # Journal Entry Tooltips - New Cultures
+ je_brazilian_nation_building_integrate_mineiro_complete_tt:0 "O povo [SCOPE.sCulture('mineiro_culture').GetName] foi integrado ao povo [SCOPE.sCulture('brazilian_culture').GetName]"
+ je_brazilian_nation_building_integrate_carioca_complete_tt:0 "O povo [SCOPE.sCulture('carioca_culture').GetName] foi integrado ao povo [SCOPE.sCulture('brazilian_culture').GetName]"
+ je_brazilian_nation_building_integrate_sertanejo_complete_tt:0 "O povo [SCOPE.sCulture('sertanejo_culture').GetName] foi integrado ao povo [SCOPE.sCulture('brazilian_culture').GetName]"
+
+ # Scripted Button Names
+ je_brazilian_nation_building_integrate_mineiro:0 "Integrar os Mineiros"
+ je_brazilian_nation_building_integrate_mineiro_past_tense:0 "Mineiros Integrados"
+ je_brazilian_nation_building_integrate_mineiro_desc:0 "Os mineiros de Minas Gerais desenvolveram uma identidade cultural própria baseada na mineração e no barroco colonial. Para integrá-los à nação brasileira, devemos fortalecer nossa identidade cultural comum e demonstrar que compartilhamos os mesmos valores nacionais."
+
+ je_brazilian_nation_building_integrate_carioca:0 "Integrar os Cariocas"
+ je_brazilian_nation_building_integrate_carioca_past_tense:0 "Cariocas Integrados"
+ je_brazilian_nation_building_integrate_carioca_desc:0 "Os cariocas da capital Rio de Janeiro são a elite cosmopolita do Império, com forte ligação à corte portuguesa. Sua integração simboliza a união entre o poder imperial e a identidade brasileira emergente."
+
+ je_brazilian_nation_building_integrate_sertanejo:0 "Integrar os Sertanejos"
+ je_brazilian_nation_building_integrate_sertanejo_past_tense:0 "Sertanejos Integrados"
+ je_brazilian_nation_building_integrate_sertanejo_desc:0 "Os sertanejos do interior brasileiro, adaptados ao cerrado e ao sertão, mantêm tradições e dialetos próprios. Conectar estas regiões remotas à nação através de infraestrutura e desenvolvimento econômico é essencial para sua integração."
+
+ # Button Requirements Tooltips
+ je_brazilian_nation_building_mineiro_gold_mines:0 "Minas Gerais possui minas de ouro desenvolvidas (nível 10+)"
+ je_brazilian_nation_building_carioca_capital_infrastructure:0 "O Rio de Janeiro possui universidades (nível 5+) ou administração governamental (nível 10+)"
+ je_brazilian_nation_building_sertanejo_development:0 "Estados sertanejos possuem ferrovias (nível 3+) ou fazendas de gado (nível 5+)"
+
+ # Integration Effect Tooltips
+ je_brazilian_nation_building_integrate_mineiro_removal_tt:0 "Minas Gerais deixa de ser homeland da cultura mineira"
+ je_brazilian_nation_building_integrate_mineiro_tt:0 "Todos os mineiros se tornam brasileiros"
+
+ je_brazilian_nation_building_integrate_carioca_removal_tt:0 "Rio de Janeiro deixa de ser homeland da cultura carioca"
+ je_brazilian_nation_building_integrate_carioca_tt:0 "Todos os cariocas se tornam brasileiros"
+
+ je_brazilian_nation_building_integrate_sertanejo_removal_tt:0 "Estados do interior deixam de ser homeland da cultura sertaneja"
+ je_brazilian_nation_building_integrate_sertanejo_tt:0 "Todos os sertanejos se tornam brasileiros"
+
+ # Failure Event Radicalization
+ radicalise_mineiros_tt:0 "Os mineiros em Minas Gerais se tornam mais radicais"
+ radicalise_cariocas_tt:0 "Os cariocas no Rio de Janeiro se tornam mais radicais"
+ radicalise_sertanejos_tt:0 "Os sertanejos no interior se tornam mais radicais"
+
+ # Integration Events
+ brazil_culture_extended.1.t:0 "A Integração dos Mineiros"
+ brazil_culture_extended.1.d:0 "Minas Gerais, com sua rica história de mineração e seu barroco colonial único, sempre manteve uma identidade cultural distinta do resto do Brasil. Os mineiros, orgulhosos de seu passado de riqueza e cultura, viam-se como um povo à parte.\n\nNo entanto, com o fortalecimento da identidade nacional brasileira e o reconhecimento de que compartilhamos os mesmos valores e aspirações, os mineiros agora se veem não como diferentes, mas como parte integral da nação brasileira. O ouro que um dia definiu sua identidade agora é visto como riqueza de todo o Brasil."
+ brazil_culture_extended.1.f:0 "Das minas de ouro nasce uma nação unida"
+ brazil_culture_extended.1.a:0 "Bem-vindos à nação brasileira!"
+
+ brazil_culture_extended.2.t:0 "A Integração dos Cariocas"
+ brazil_culture_extended.2.d:0 "O Rio de Janeiro, capital do Império, sempre foi o coração cosmopolita do Brasil. Os cariocas, influenciados pela corte portuguesa e pela vida urbana refinada, desenvolveram uma cultura própria de sofisticação e elegância.\n\nMas a verdadeira brasilidade não se limita aos salões da corte. Com o crescimento do sentimento nacional e a valorização das tradições brasileiras, os cariocas abraçam sua identidade como brasileiros, não apenas como súditos da coroa. A capital agora representa não o poder português, mas a grandeza da nação brasileira."
+ brazil_culture_extended.2.f:0 "A corte imperial torna-se o coração do Brasil"
+ brazil_culture_extended.2.a:0 "A capital da nação brasileira!"
+
+ brazil_culture_extended.3.t:0 "A Integração dos Sertanejos"
+ brazil_culture_extended.3.d:0 "O vasto interior do Brasil, com seu clima seco e terras desafiadoras, moldou um povo resistente e independente. Os sertanejos, distantes dos centros urbanos litorâneos, desenvolveram suas próprias tradições, dialetos e modos de vida.\n\nCom a expansão da infraestrutura e o desenvolvimento econômico alcançando o interior, as barreiras geográficas que separavam o sertão do litoral estão caindo. Os sertanejos, há muito isolados, agora se reconhecem como parte da grande nação brasileira, trazendo consigo suas tradições únicas que enriquecem nossa identidade coletiva."
+ brazil_culture_extended.3.f:0 "Do sertão ao litoral, um só Brasil"
+ brazil_culture_extended.3.a:0 "Unidos do sertão ao mar!"

@@ -1,0 +1,31 @@
+# Victoria 3 Mod Development
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build artifacts
+*.zip
+*.rar
+*.7z
+
+# Personal notes
+notes.txt
+todo.txt

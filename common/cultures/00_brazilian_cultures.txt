@@ -1,0 +1,269 @@
+# Brazil Update+ - New Brazilian Cultures
+# Adds regional cultural diversity to Brazil
+
+mineiro = {
+	color = hsv{ 0.15 0.60 0.45 }
+	religion = catholic
+	heritage = heritage_latin_american_settler
+	language = language_lusophone
+
+	obsessions = {
+		gold
+	}
+
+	traditions = { }
+
+	male_common_first_names = {
+		Afonso Antonio_3 Ataualpa Aurelio_2
+		Bernardo Bias
+		Carlos Claudio Custodio
+		Diogo Delfim
+		Eduardo Evaristo
+		Francisco Fernando Feliciano
+		Gabriel Gustavo
+		Honorio
+		Inacio
+		Joao Jose_2 Joaquim
+		Luis_2
+		Manuel Miguel Marcelino
+		Pedro Paulo
+		Rodrigo
+		Sebastiao
+		Teofilo Tomas
+		Vicente
+	}
+
+	female_common_first_names = {
+		Ana Antonia Augusta
+		Benedita
+		Carlota Cristina
+		Domingas
+		Emilia Eugenia
+		Feliciana Francisca
+		Gertrudes
+		Ines Isabel
+		Jacinta Joaquina Josefa
+		Luisa
+		Maria Mariana
+		Rosa
+		Teresa
+	}
+
+	noble_last_names = {
+		de_Andrada_e_Silva
+		de_Barbacena
+		de_Figueiredo
+		de_Magalhaes
+		de_Mesquita
+		de_Oliveira_Melo
+		de_Paula_Souza
+		de_Rezende
+		de_Vasconcellos
+		da_Fonseca_Lobo
+		da_Luz
+		da_Veiga
+		Dias_de_Avelar
+		Pinto_Coelho
+	}
+
+	common_last_names = {
+		Alves Andrade Araujo
+		Batista Borges
+		Camargo Cardoso Castro Costa
+		Dias
+		Fernandes Ferreira
+		Gomes Guimaraes
+		Lima
+		Machado Martins Mendes Moreira
+		Neves
+		Oliveira
+		Pereira Pinto
+		Ramos Reis Ribeiro Rocha
+		Santos Silva Soares
+		Teixeira
+		Vieira
+	}
+
+	ethnicities = {
+		1 = south_american
+	}
+
+	graphics = brazilian
+}
+
+carioca = {
+	color = hsv{ 0.55 0.45 0.60 }
+	religion = catholic
+	heritage = heritage_latin_american_settler
+	language = language_lusophone
+
+	obsessions = {
+		luxury_furniture
+	}
+
+	traditions = { }
+
+	male_common_first_names = {
+		Afonso Antonio_3 Augusto
+		Bento
+		Carlos Claudio
+		Deodoro Domingos
+		Eduardo Eugenio_2
+		Fernando Francisco_Xavier Floriano
+		Henrique Heitor
+		Joao Jose_2 Joaquim
+		Luis_2 Leopoldo
+		Manuel Mario_2 Miguel
+		Nilo
+		Oswaldo
+		Paulo Pedro
+		Raul Rodrigo
+		Silvio
+		Thomaz
+		Venceslau Vicente
+	}
+
+	female_common_first_names = {
+		Adelaide Ana
+		Beatriz Branca
+		Carlota Carmen Cristina
+		Dolores
+		Elvira Emilia
+		Francisca
+		Helena
+		Isabel
+		Joaquina Julia
+		Laura Leopoldina
+		Maria Mariana
+		Rosa
+		Teresa
+		Violeta
+	}
+
+	noble_last_names = {
+		de_Braganca
+		de_Almeida
+		de_Assis
+		de_Beaurepaire-Rohan
+		de_Moraes
+		de_Orleans_e_Braganca
+		de_Paula_Machado
+		de_Alcantara
+		da_Veiga
+		dos_Santos
+		Paranhos
+		Pereira_de_Souza
+		Teixeira_de_Freitas
+	}
+
+	common_last_names = {
+		Almeida Alves
+		Barbosa Botelho
+		Camara Cardoso Castro Costa
+		Dias
+		Fernandes Ferreira
+		Gomes
+		Lima Lemos
+		Machado Martins Moreira
+		Nascimento
+		Oliveira
+		Peixoto Pereira
+		Ramos Ribeiro
+		Santos Silva Soares
+		Tavares
+		Vieira
+	}
+
+	ethnicities = {
+		1 = south_american
+	}
+
+	graphics = brazilian
+}
+
+sertanejo = {
+	color = hsv{ 0.08 0.55 0.50 }
+	religion = catholic
+	heritage = heritage_latin_american_settler
+	language = language_lusophone
+
+	obsessions = {
+		fabric
+	}
+
+	traditions = { }
+
+	male_common_first_names = {
+		Antonio_3 Anselmo
+		Baltazar Bento
+		Cipriano Clemente
+		Damiao Domingos
+		Elias Estevao
+		Fabiano Francisco Firmino
+		Goncalo Geraldo
+		Inacio
+		Jeronimo Joaquim Jose_2 Joao
+		Laurindo
+		Manoel Mateus Miguel
+		Nicolau
+		Pedro Paulo
+		Raimundo
+		Sebastiao Simao
+		Timoteo
+		Venancio Vicente
+	}
+
+	female_common_first_names = {
+		Ana Antonia
+		Benedita
+		Catarina
+		Domingas Dorotheia
+		Escolastica Estefania
+		Feliciana Francisca
+		Gertrudes
+		Ignez
+		Joana Josefa Juliana
+		Luzia
+		Maria Mariana
+		Rita Rosa
+		Teresa
+		Ursula
+	}
+
+	noble_last_names = {
+		de_Alencar
+		de_Bulhoes
+		de_Caiado
+		de_Gouveia
+		de_Queiroz
+		da_Cunha
+		Couto_de_Magalhaes
+		Fleury_Curado
+		Jardim_de_Sa
+		Leme_do_Prado
+	}
+
+	common_last_names = {
+		Alves Araujo
+		Barbosa Borges
+		Camargo Cardoso Castro Costa
+		Dias
+		Fernandes Ferreira Freitas
+		Gomes
+		Lima
+		Machado Martins Mendes Moraes
+		Nunes
+		Oliveira
+		Pereira Pinto
+		Ramos Reis Ribeiro
+		Santos Silva Sousa
+		Teixeira Torres
+		Vieira
+	}
+
+	ethnicities = {
+		1 = south_american
+	}
+
+	graphics = brazilian
+}

@@ -3,9 +3,8 @@
   "id" : "",
   "version" : "5.0",
   "supported_game_version" : "1.13.*",
-  "short_description" : "",
-  "thumbnail" : "thumbnail.png",
-  "tags" : [],
+  "short_description" : "Divide o Brasil em 26 estados realistas, adiciona recursos históricos precisos e tradução completa PT-BR. Inclui novos estados como Espírito Santo, Rondônia, Roraima e Tocantins.",
+  "tags" : ["Map", "Historical", "Brazil", "Gameplay", "Translation", "Portuguese"],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true

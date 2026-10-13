@@ -946,7 +946,7 @@ POPS = {
 	s:STATE_MATO_GROSSO = {
 		region_state:BRZ = {
 			create_pop = {
-				culture = paulista
+				culture = sertanejo
 				size = 4278 # 1828 census
 			}
 			create_pop = {
@@ -1039,7 +1039,7 @@ POPS = {
 		}
 		region_state:BRZ = {
 			create_pop = {
-				culture = paulista
+				culture = sertanejo
 				size = 11000 # 1828 census
 			}
 			create_pop = {
@@ -1160,7 +1160,7 @@ POPS = {
 	s:STATE_MINAS_GERAIS = {
 		region_state:BRZ = {
 			create_pop = {
-				culture = brazilian
+				culture = mineiro
 				size = 467304
 			}
 			create_pop = {
@@ -1181,7 +1181,7 @@ POPS = {
 		# total:									582808
 		region_state:BRZ = {
 			create_pop = {
-				culture = brazilian
+				culture = carioca
 				size = 560392
 			}
 			create_pop = {
@@ -1199,7 +1199,7 @@ POPS = {
 			}
 		}
 	}
-	s:STATE_ESPÍRITO_SANTO = {
+	s:STATE_ESPIRITO_SANTO = {
 		# Rio de Janeiro not including city, 1840: 	401577
 		# City of Rio de Janeiro, 1799+1872 avg:	158669
 		# Espirito Santo, 1839: 					22562
@@ -1416,7 +1416,7 @@ POPS = {
 	s:STATE_GOIAS = { # total ballpark figure: 73918
 		region_state:BRZ = {
 			create_pop = {
-				culture = paulista
+				culture = sertanejo
 				size = 39921
 			}
 			create_pop = {
@@ -1437,7 +1437,7 @@ POPS = {
 	s:STATE_TOCANTINS = { # total ballpark figure: 73918
 		region_state:BRZ = {
 			create_pop = {
-				culture = nordestino
+				culture = sertanejo
 				size = 9000
 			}
 			create_pop = {

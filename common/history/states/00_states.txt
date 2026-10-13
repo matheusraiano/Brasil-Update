@@ -2723,14 +2723,14 @@ STATES = {
 		add_homeland = cu:brazilian
 		add_homeland = cu:afro_brazilian		
 	}
-	s:STATE_ESPÍRITO_SANTO = {
+	s:STATE_ESPIRITO_SANTO = {
 		create_state = {
 			country = c:BRZ
 			owned_provinces = { xE0E888 x27995A x8350FC x3BDEE1 x9555DE xB97C7F x258421 x96728E }
 		}
-		
+
 		add_homeland = cu:brazilian
-		add_homeland = cu:afro_brazilian		
+		add_homeland = cu:afro_brazilian
 	}
 	s:STATE_BAHIA = {
 		create_state = {
