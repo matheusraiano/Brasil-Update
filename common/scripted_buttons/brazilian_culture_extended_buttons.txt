@@ -126,15 +126,14 @@ je_brazilian_nation_building_integrate_carioca = {
 					state_region = {
 						is_homeland = cu:carioca
 					}
-					OR = {
-						any_scope_building = {
-							is_building_type = building_university
-							level >= 5
-						}
-						any_scope_building = {
-							is_building_type = building_government_administration
-							level >= 10
-						}
+					# Exige AMBOS: universidade E administracao avancada (antes exigia apenas um dos dois)
+					any_scope_building = {
+						is_building_type = building_university
+						level >= 5
+					}
+					any_scope_building = {
+						is_building_type = building_government_administration
+						level >= 10
 					}
 				}
 			}
@@ -218,15 +217,14 @@ je_brazilian_nation_building_integrate_sertanejo = {
 					state_region = {
 						is_homeland = cu:sertanejo
 					}
-					OR = {
-						any_scope_building = {
-							is_building_type = building_railroad
-							level >= 3
-						}
-						any_scope_building = {
-							is_building_type = building_livestock_ranch
-							level >= 5
-						}
+					# Exige AMBOS: ferrovia E rancho (antes exigia apenas um dos dois)
+					any_scope_building = {
+						is_building_type = building_railroad
+						level >= 3
+					}
+					any_scope_building = {
+						is_building_type = building_livestock_ranch
+						level >= 5
 					}
 				}
 			}

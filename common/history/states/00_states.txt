@@ -9196,4 +9196,36 @@ STATES = {
 		}
 	    add_homeland = cu:tibetan
 	}
+
+	# Brazil Update+ - Homelands para culturas regionais novas
+	# Sem estes homelands, os pops sao tratados como nao-nativos e assimilam
+	# imediatamente para a cultura brasileira no inicio do jogo.
+
+	s:STATE_MINAS_GERAIS = {
+		add_homeland = cu:mineiro
+	}
+
+	s:STATE_RIO_DE_JANEIRO = {
+		add_homeland = cu:carioca
+	}
+
+	s:STATE_ESPIRITO_SANTO = {
+		add_homeland = cu:carioca
+	}
+
+	s:STATE_GOIAS = {
+		add_homeland = cu:sertanejo
+	}
+
+	s:STATE_TOCANTINS = {
+		add_homeland = cu:sertanejo
+	}
+
+	s:STATE_MATO_GROSSO = {
+		add_homeland = cu:sertanejo
+	}
+
+	s:STATE_MATO_GROSSO_DU_SUL = {
+		add_homeland = cu:sertanejo
+	}
 }
