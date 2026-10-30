@@ -219,7 +219,7 @@ je_brazilian_nation_building_integrate_sertanejo = {
 					}
 					# Exige AMBOS: ferrovia E rancho (antes exigia apenas um dos dois)
 					any_scope_building = {
-						is_building_type = building_railroad
+						is_building_type = building_railway
 						level >= 3
 					}
 					any_scope_building = {
